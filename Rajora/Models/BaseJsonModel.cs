@@ -1,4 +1,4 @@
-﻿namespace Rajora.Models
+﻿namespace Rajora
 {
     public class BaseJsonModel
     { }

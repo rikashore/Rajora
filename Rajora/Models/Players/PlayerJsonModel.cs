@@ -53,7 +53,7 @@ namespace Rajora.Models
         public int DonationsReceived { get; set; }
 
         [JsonProperty("clan")]
-        public PartialClanJsonModel Clan { get; set; }
+        public PlayerClanJsonModel Clan { get; set; }
 
         [JsonProperty("achievements")]
         public AchievementJsonModel[] Achievements { get; set; }

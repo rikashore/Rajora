@@ -2,7 +2,7 @@
 
 namespace Rajora.Models
 {
-    public class PartialClanJsonModel
+    public class PlayerClanJsonModel
     {
         [JsonProperty("tag")]
         public string Tag { get; set; }

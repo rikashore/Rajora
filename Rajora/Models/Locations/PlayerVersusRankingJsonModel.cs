@@ -2,7 +2,7 @@
 {
     public class PlayerVersusRankingJsonModel : BaseJsonModel
     {
-        public PlayerRankingClanJsonModel Clan { get; set; }
+        public PartialClanJsonModel Clan { get; set; }
 
         public int VersusBattleWins { get; set; }
 

@@ -1,7 +1,7 @@
 ﻿using System;
 using Newtonsoft.Json;
 
-namespace Rajora.GoldPass
+namespace Rajora
 {
     public class CurrentSeasonGoldpass : BaseJsonModel
     {

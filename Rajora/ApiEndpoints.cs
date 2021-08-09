@@ -39,7 +39,7 @@ namespace Rajora
             internal static Uri GetLeagues() => "leagues".FormatUri();
             internal static Uri GetLeague(string leagueId) => "leagues/{0}".FormatUri(leagueId);
 
-            internal static Uri GetLeagueBySeasonId(string leagueId, string seasonId) => "leagues/{0}/seasons/{1}".FormatUri(leagueId, seasonId);
+            internal static Uri GetLeagueSeasonRankings(string leagueId, string seasonId) => "leagues/{0}/seasons/{1}".FormatUri(leagueId, seasonId);
             internal static Uri GetLeagueSeasons(string leagueId) => "leagues/{0}/seasons".FormatUri(leagueId);
 
             internal static Uri GetWarleagues() => "warleagues".FormatUri();

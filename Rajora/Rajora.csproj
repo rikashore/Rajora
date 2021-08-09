@@ -3,6 +3,16 @@
     <PropertyGroup>
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
+    
+    <PropertyGroup>
+        <PackageId>Rajora</PackageId>
+        <Version>0.1.0</Version>
+        <PackageProjectUrl>https://github.com/shift-eleven/Rajora</PackageProjectUrl>
+        <Description>
+            A simple wrapper around the Clash of Clan API.
+        </Description>
+        <PackageTags>Clash Of Clans</PackageTags>
+    </PropertyGroup>
 
     <ItemGroup>
       <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />

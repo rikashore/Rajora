@@ -2,7 +2,7 @@
 
 namespace Rajora
 {
-    public class PlayerVersusRanking : BaseJsonModel
+    public class PlayerVersusRanking
     {
         [JsonProperty("clan")]
         public PartialClan Clan { get; set; }

@@ -2,7 +2,7 @@
 
 namespace Rajora
 {
-    public class PlayerTokenVerification : BaseJsonModel
+    public class PlayerTokenVerification
     {
         [JsonProperty("tag")]
         public string Tag { get; set; }

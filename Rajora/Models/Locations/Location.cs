@@ -2,7 +2,7 @@
 
 namespace Rajora
 {
-    public class Location : BaseJsonModel
+    public class Location
     {
         [JsonProperty("localizedName")]
         public string LocalizedName { get; set; }

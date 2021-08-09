@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace Rajora
 {
-    public class CurrentSeasonGoldpass : BaseJsonModel
+    public class CurrentSeasonGoldpass
     {
         [JsonProperty("startTime")]
         public DateTimeOffset StartTime { get; set; }

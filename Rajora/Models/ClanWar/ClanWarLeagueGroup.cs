@@ -3,7 +3,7 @@ using Newtonsoft.Json;
 
 namespace Rajora
 {
-    public class ClanWarLeagueGroup : BaseJsonModel
+    public class ClanWarLeagueGroup
     {
         [JsonProperty("tag")]
         public string Tag { get; set; }

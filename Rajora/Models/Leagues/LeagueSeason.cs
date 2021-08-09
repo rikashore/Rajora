@@ -2,7 +2,7 @@
 
 namespace Rajora
 {
-    public class LeagueSeason : BaseJsonModel
+    public class LeagueSeason
     {
         [JsonProperty("id")]
         public string Id { get; set; }

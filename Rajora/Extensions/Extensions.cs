@@ -10,7 +10,7 @@ namespace Rajora.Extensions
     internal static class Extensions
     {
         internal static Uri FormatUri(this string s, params object[] args)
-            => new Uri(string.Format(s, args), UriKind.Relative);
+            => new Uri(string.Format(s, args.Select(x => WebUtility.UrlEncode(x.ToString()))), UriKind.Relative);
 
         internal static Uri AddQueryParams(this Uri uri, IDictionary<string, object> queries)
         {

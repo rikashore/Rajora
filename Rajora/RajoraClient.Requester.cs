@@ -9,7 +9,6 @@ namespace Rajora
     public partial class RajoraClient
     {
         private async Task<T> GetAsync<T>(Uri route, IDictionary<string, object> queryParams = null)
-            where T : BaseJsonModel
         {
             if (queryParams is not null)
                 route.AddQueryParams(queryParams);
@@ -18,7 +17,12 @@ namespace Rajora
 
             using var content = res.Content;
             var s = await content.ReadAsStreamAsync();
-            return s.DeserializeTo<T>();
+
+            if (res.IsSuccessStatusCode)
+                return s.DeserializeTo<T>();
+
+            var err = s.DeserializeTo<Error>();
+            throw new Exception(err.Reason);
         }
 
         private async Task<T> PostAsync<T>(Uri route, string payload)
@@ -32,7 +36,12 @@ namespace Rajora
 
             using var content = res.Content;
             var s = await content.ReadAsStreamAsync();
-            return s.DeserializeTo<T>();
+
+            if (res.IsSuccessStatusCode)
+                return s.DeserializeTo<T>();
+
+            var err = s.DeserializeTo<Error>();
+            throw new Exception(err.Reason);
         }
     }
 }
